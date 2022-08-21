@@ -13,6 +13,6 @@ def on_activate(app):
 
     win.present()
 
-app = Gtk.Application(application_id='org.gtk.Example')
+app = Gtk.Application(application_id='org.gtk.Example')  #sometimes we just don't need to write id just the function
 app.connect('activate', on_activate)
 app.run(None)

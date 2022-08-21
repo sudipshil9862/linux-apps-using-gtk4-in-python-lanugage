@@ -2,6 +2,7 @@ import gi
 gi.require_version("Gtk", "4.0") 
 from gi.repository import Gtk
 
+#making the code into classes cause doing it in functional style is a little python.
 class AppWindow(Gtk.ApplicationWindow):
 
     def __init__(self, app):
@@ -34,6 +35,15 @@ class AppWindow(Gtk.ApplicationWindow):
         else:
             self.set_title('CheckButton is NOT clicked')
 
+
+'''
+#another way of check button - after one button clicked hello function starts and here we have check button functions
+def hello(self, button):
+    print("Hello world")
+    if self.check.get_active():
+        print("Goodbye world!")
+        self.close()
+'''
 
 def on_activate(app):
 

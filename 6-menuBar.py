@@ -44,6 +44,6 @@ def on_activate(app):
     win.present()
 
 
-app = Gtk.Application(application_id='com.zetcode.SimpleMenu')
+app = Gtk.Application(application_id='org.gtk.Example')
 app.connect('activate', on_activate)
 app.run(None)
