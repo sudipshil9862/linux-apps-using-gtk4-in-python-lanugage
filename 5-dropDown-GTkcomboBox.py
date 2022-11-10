@@ -31,7 +31,7 @@ class AppWindow(Gtk.ApplicationWindow):
         combo.append_text('Fedora36')
         combo.append_text('Fedora37')
         combo.append_text('Fedora38')
-        
+
         self.label = Gtk.Label.new('Fedora34')
         hbox.append(self.label)
 
